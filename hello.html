@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    $queryTotalteam= "SELECT COUNT(*) as total_team FROM experts";
+$resultTotalteam = mysqli_query($conn, $queryTotalteam);
+$totalteam = 0; // Default value
+
+// Check if the query was successful and data was retrieved
+if ($resultTotalteam && mysqli_num_rows($resultTotalteam) > 0) {
+    // Fetch the count as an associative array
+    $rowTotalteam = mysqli_fetch_assoc($resultTotalteam);
+    $totalteam = $rowTotalteam['total_team'];
+}
+</body>
+</html>

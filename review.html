@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+
+<body>
+    <div class="reviews-container">
+        <div class="reviews-box">
+            <div class="reviews">
+                <h2>Leave a Review</h2>
+                <form action="upload.php" method="post" class="review-form">
+                    <div class="input-box">
+                        <label style="margin-right: 8%;">Name</label>
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="input-box">
+                        <label style="margin-right: 8%;">Email</label>
+                        <input type="text" name="satus" placeholder="Enter Your Status" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Review</label>
+                        <textarea name="review" placeholder="Enter Your Review" rows="4" required></textarea>
+                    </div>
+                    <div class="reviews-btn">
+                        <button type="submit" name="review_submit" class="submit-btn">Submit Review</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
